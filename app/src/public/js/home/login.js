@@ -1,1 +1,14 @@
-console.log('hello')
+const id = document.querySelector('#id')
+const passwd = document.querySelector('#passwd')
+const loginBtn = document.querySelector('button')
+
+loginBtn.addEventListener('click', login);
+
+function login () {
+    const req = {
+        id : id.value,
+        passwd : passwd.value,
+    };
+
+    console.log(req);
+}
