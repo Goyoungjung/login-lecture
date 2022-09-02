@@ -18,6 +18,12 @@ class User {
         return {success : false, msg : "아이디가 없습니다."}
         
     }
+
+    register() {
+        const body = this.body;
+        const response = UserStorage.save(body);
+        return response;
+    }
 }
 
 
